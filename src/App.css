@@ -1,0 +1,50 @@
+.App{
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.Menu{
+    height: 100%;
+    width: 250px;
+    background-color: #2c3842;
+}
+
+.Menulist{
+    height: auto;
+    padding: 0;
+    width: 100%;
+}
+
+.Menulist .row{
+    width:100%;
+    height:60px;
+    list-style-type: none;
+    display: flex;
+    margin: 0%;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Menulist .row:hover{
+    cursor:pointer;
+    background-color: #222b33;
+}
+.row #icon{
+    flex:30%;
+    display:grid;
+    place-items: center;
+}
+
+.row #title{
+    flex:70%
+}
+
