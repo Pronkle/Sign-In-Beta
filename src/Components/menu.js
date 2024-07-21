@@ -8,12 +8,10 @@ function Menu() {
         <ul className="Menulist">
             {Menudata.map((val, key) => {
                 return(
-                    <li 
-                     key={key} 
-                     className="row" 
-                     onclick={() => {
-                         window.location.pathname = val.link
-                     }}
+                    <li key={key} className="row" 
+                        onclick={() => {
+                            window.location.pathname = val.link
+                        }}
                     >
                         {" "}
                         <div id="icon">{val.icon}</div>{" "}
