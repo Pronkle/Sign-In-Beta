@@ -8,8 +8,11 @@ function Menu() {
         <ul className="Menulist">
             {Menudata.map((val, key) => {
                 return(
-                    <li key={key} className="row" 
-                        onclick={() => {
+                    <li 
+                        key={key} 
+                        className="row" 
+                        id = {window.location.pathname == val.link ? "active" : ""}
+                        onClick={() => {
                             window.location.pathname = val.link
                         }}
                     >
